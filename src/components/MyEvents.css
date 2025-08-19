@@ -1,0 +1,32 @@
+.my-events-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.my-events-title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.my-events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.my-event-item {
+  background: #fff;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-event-actions button {
+  margin-left: 8px;
+}

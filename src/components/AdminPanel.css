@@ -1,0 +1,183 @@
+.admin-panel-container{ padding:24px; max-width:1100px; margin:0 auto; }
+.admin-panel-title{ font-weight:800; margin:0 0 12px; }
+.add-event-btn{ background:#2d6cdf; color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer; }
+.add-event-form{ margin:12px 0; display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:12px; padding:12px; background:#fff; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,.08); }
+.add-event-form h3{ grid-column:1/-1; }
+.add-event-form .form-group input, .add-event-form .form-group textarea{ width:100%; padding:10px; border-radius:8px; border:1px solid #e2e8f0; }
+.admin-events-table{ width:100%; border-collapse:collapse; background:#fff; box-shadow:0 4px 16px rgba(0,0,0,.06); border-radius:12px; overflow:hidden; }
+.admin-events-table th, .admin-events-table td{ padding:10px 12px; border-bottom:1px solid #eef2f7; text-align:left; }
+.admin-event-actions button{ margin-right:8px; background:#f1f5f9; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+.admin-event-actions button:hover{ background:#e2e8f0; }
+.admin-panel-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+
+.admin-panel-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.add-event-btn {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.add-event-btn:hover {
+  background: #2980b9;
+}
+
+.add-event-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-event-form h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.add-event-form button {
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-event-form button:hover {
+  background: #219a52;
+}
+
+.admin-events-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.admin-events-table th,
+.admin-events-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-events-table th {
+  background: #34495e;
+  color: white;
+  font-weight: bold;
+}
+
+.admin-events-table tr:hover {
+  background: #f5f5f5;
+}
+
+.admin-event-actions button {
+  margin-right: 8px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.admin-event-actions button:first-child {
+  background: #f39c12;
+  color: white;
+}
+
+.admin-event-actions button:last-child {
+  background: #e74c3c;
+  color: white;
+}
+
+.admin-event-actions button:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 900px) {
+  .admin-panel-container {
+    max-width: 98vw;
+    padding: 12px;
+  }
+  .admin-events-table th,
+  .admin-events-table td {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-panel-container {
+    margin: 10px;
+    padding: 6px;
+  }
+  .admin-panel-title {
+    font-size: 1.2rem;
+  }
+  .admin-events-table,
+  .admin-events-table thead,
+  .admin-events-table tbody,
+  .admin-events-table th,
+  .admin-events-table td,
+  .admin-events-table tr {
+    display: block;
+    width: 100%;
+  }
+  .admin-events-table th {
+    display: none;
+  }
+  .admin-events-table td {
+    position: relative;
+    padding-left: 50%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+  }
+  .admin-events-table td:before {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+    content: attr(data-label);
+  }
+}

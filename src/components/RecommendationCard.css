@@ -1,0 +1,40 @@
+.recommendation-card{
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.recommendation-card__header h2{ margin: 0 0 6px; color: #2c3e50; font-weight: 800; letter-spacing: 0.3px; }
+.recommendation-card__subtitle{ color: #7a5c3a; margin: 0 0 12px; }
+.recommendation-card__interest-list{ display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; }
+.recommendation-card__interest-item{ padding: 8px 14px; background: rgba(200,125,76,0.12); color: #a55233; border-radius: 999px; font-weight: 600; }
+.recommendation-card__empty{ color: #7a5c3a; opacity: 0.9; }
+.recommendation-card__actions{ margin-top: 16px; display:flex; gap: 12px; flex-wrap: wrap; }
+.recommendation-card__actions button{ padding: 10px 14px; border-radius: 10px; border: 1px solid #d9dfe6; background: #ffffff; cursor:pointer; font-weight: 600; color:#2c3e50; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.recommendation-card__actions button:hover{ background: #f3f6f9; }
+.recommendation-card__actions button:focus{ outline: 3px solid rgba(164, 82, 51, 0.35); outline-offset: 2px; }
+.recommendation-card__status{ margin-top: 8px; font-size: .92em; color: #7a5c3a; }
+
+.recommendation-card__grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:12px; margin-top: 16px; }
+.recommendation-card__item{ border:1px solid #eee; border-radius: 12px; padding: 12px; background:#fff; }
+.recommendation-card__item-title{ font-weight:700; margin-bottom:4px; color:#2c3e50; }
+.recommendation-card__item-meta{ font-size: .9em; color:#7a5c3a; margin-bottom:6px; }
+.recommendation-card__item-tags{ font-size: .85em; color:#a55233; }
+
+/* Dark theme */
+body.dark-theme .recommendation-card{ background: rgba(24,28,36,0.95); color: #f5f6fa; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+body.dark-theme .recommendation-card__subtitle{ color: #ffe19e; }
+body.dark-theme .recommendation-card__interest-item{ background: rgba(200,125,76,0.18); color: #ffe19e; }
+body.dark-theme .recommendation-card__item{ background:#1f2530; border-color:#2a3241; }
+body.dark-theme .recommendation-card__item-title{ color:#ffe19e; }
+body.dark-theme .recommendation-card__item-meta{ color:#b2becd; }
+body.dark-theme .recommendation-card__actions button{ background:#232a36; border-color:#2a3241; color:#f5f6fa; }
+body.dark-theme .recommendation-card__actions button:hover{ background:#1f2530; }
+
+@media(max-width:768px){
+  .recommendation-card{ margin: 16px auto; padding: 16px; }
+}
+

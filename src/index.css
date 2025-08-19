@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body, #root{
+    min-height: 100%;
+}
+html{
+    background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%) fixed no-repeat;
+    background-size: cover;
+}
+
+/* Make body a normal document flow container; keep background on html for broader browser support */
+body{
+    font-family: "Poppins, sans-serif";
+    min-height: 100vh;
+    background: transparent;
+}
+
+/* Responsive utility container */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (max-width: 768px){
+    .container{ max-width: 100%; padding: 0 12px; }
+}

@@ -1,0 +1,95 @@
+/* src/components/EventCategories.css */
+.event-categories {
+  padding: 40px 20px;
+  width: 100%;
+  /* full-bleed gradient comes from body */
+  max-width: none;
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+  text-align: center;
+}
+
+.event-categories h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  animation: slideInDown 1s ease-out;
+}
+
+.event-categories h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff, #ecf0f1);
+  margin: 20px auto;
+  border-radius: 2px;
+  animation: slideInUp 1s ease-out 0.3s both;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 20px;
+  /* Keep content nicely centered while background is full width */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .event-categories {
+    padding: 20px 10px;
+  }
+  
+  .event-categories h2 {
+    font-size: 2.2em;
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+}
+
+body.dark-theme .event-categories {
+  background: linear-gradient(135deg, #232a36 0%, #181c24 100%) !important;
+  color: #f5f6fa;
+}
+body.dark-theme .event-categories h2 {
+  color: #4fc3f7;
+}
+body.dark-theme .event-categories h2::after {
+  /* background: linear-gradient(90deg, #4fc3f7, #2980b9); */
+  background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+}
