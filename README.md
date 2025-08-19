@@ -1,4 +1,5 @@
-📌 Overview
+📌 Overview:-
+
 This project is an Event Organization Platform that enables administrators and users to efficiently manage and participate in events. The system includes a control panel for admins, user event creation, event registrations, and an integrated AI-powered chatbot to guide users and provide instant support.
 
 ✨ Features
