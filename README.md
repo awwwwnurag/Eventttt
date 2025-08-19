@@ -1,12 +1,59 @@
-# React + Vite
+Event Organization Website
+📌 Overview
+This project is an Event Organization Platform that enables administrators and users to efficiently manage and participate in events. The system includes a control panel for admins, user event creation, event registrations, and an integrated AI-powered chatbot to guide users and provide instant support.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Admin Control Panel:
 
-Currently, two official plugins are available:
+Manage users, events, and registrations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Approve or decline events created by users
 
-## Expanding the ESLint configuration
+User Features:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Create and publish events
+
+Browse and register for available events
+
+Manage registered events from a personal dashboard
+
+AI Chatbot Support:
+
+Provides quick help and FAQs
+
+Guides users through event creation, registration, and troubleshooting steps
+
+24/7 automated assistance
+
+🛠️ Tech Stack
+Frontend: ( HTML, CSS, REACT JS,EXPRESS JS)
+
+Backend: (Node.js )
+
+Database: ( MongoDB)
+
+AI Chatbot: Integrated using  OpenAI
+
+Authentication: JWT / OAuth / Firebase Authentication
+
+📖 Usage
+Admin can log in to the control panel to manage users, events, and registrations.
+
+Users can sign up, create events, and register for available events.
+
+Chatbot helps answer queries like:
+
+“How do I create an event?”
+
+“Where can I see my registered events?”
+
+“How can I contact support?
+
+ Future Enhancements
+Payment gateway integration for paid events
+
+Notifications (Email / SMS / Push)
+
+Multi-language support in Chatbot
+
+Event reminder system
